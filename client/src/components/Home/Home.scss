@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.home__wrapper {
+  margin-top: 20px;
+  display: flex;
+
+  @include breakpoint($scr2) {
+    gap: 20px;
+  }
+
+  @include breakpoint($scr3) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,106 @@
+@import '../../styles/variables';
+
+button {
+  padding: 5px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.table__image {
+  width: 100px;
+}
+
+.btn-modal {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-prime;
+  color: $color-white;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: $color-white;
+    color: $color-prime;
+    border: 1px solid $color-prime;
+  }
+}
+
+.product {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.image-upload {
+  display: block;
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__item {
+    width: 100%;
+    padding: 5px;
+    display: block;
+    border: 1px solid #000;
+    outline: none;
+  }
+
+  &__button {
+    text-transform: uppercase;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  // border-collapse: collapse;
+
+  tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  th {
+    color: white;
+    background-color: #646464;
+  }
+
+  td {
+    text-align: center;
+  }
+}
